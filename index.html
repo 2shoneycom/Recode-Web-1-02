@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            height: 120px;
+            display: flex;
+            justify-content: center;
+        }
+        #header .menu_bar {
+            width: 90%;
+            height: 120px;
+        }
+        .menu_bar .for_menu_item {
+            width: 10%;
+            height: 120px;
+            float: left;
+        }
+        .menu_bar .for_logo {
+            width: 40%;
+            height: 120px;
+            float: left;
+            text-align: center;
+        }
+        .for_menu_item .item {
+            margin-top: 27px;
+            width: 100%;
+            height: 93px;
+            float: left;
+            text-align: center;
+        }
+        .item a {
+            display: block;
+            margin-top: 50px;
+        }
+        .for_logo img {
+            margin-top: 33px;
+        }
+        #header a:link {
+            color: black; 
+            text-decoration-line: none;
+        }
+        #header a:visited {
+            color: black; 
+            text-decoration-line: none;
+        }
+        #header a:hover {
+            color: red; 
+            text-decoration-line: underline;
+        }
+        #header a:active {
+            color: red; 
+            text-decoration-line: underline;
+        }
+
+        #main_picture {
+            height: 484px;
+        }
+        #main_picture img[src="main.png"] {
+            width: 100%;
+            height: 100%;
+        }
+
+        p.icon_title_text {
+            text-align: center;
+            margin-top: 50px;
+        }
+        p.icon_title_text strong{
+            font-size: 30px;
+        }
+
+        div.icon_box {
+            display: inline;
+            width: 1240px;
+            text-align: center;
+        }
+        div.icon_box p {
+            width: 250px;
+            margin-left: 30px;
+            margin-right: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+        }
+        div.icon_box hr {
+            display: inline-block;
+            width: 250px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        div.chefs {
+            height: 304px;
+            background-color:lightgray;
+            text-align: center;
+        }
+        div.chefs > div {
+            display: inline-block;
+            width: 814px;
+            height: 100%;
+            text-align: left;
+        }
+        div.chefs #left {
+            width: 514px;
+            height: 304px;
+            float: left;
+        }
+        div.chefs #right {
+            width: 300px;
+            height: 304px;
+            float: left;
+        }
+        div.chefs p {
+            margin-top: 100px;
+            width: 500px;
+            height: 100px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="menu_bar">
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href=#>How it works</a>
+                    </div>
+                </div>
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href=#>Gifts</a>
+                    </div>
+                </div>
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href="about.html" target="_self">About</a>
+                    </div>
+                </div>
+                <div class="for_logo">
+                    <img src="logo.png">
+                </div>
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href=#>Login</a>
+                    </div>
+                </div>
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href=#>Members</a>
+                    </div>
+                </div>
+                <div class="for_menu_item">
+                    <div class="item">
+                        <a href=#>Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_picture">
+            <img src="main.png">
+        </div>
+
+        <p class="icon_title_text">
+            "what's FOR DINNER"<br>
+            <strong>FINALLY HAS AN</strong><br>
+            <strong>EASY ANSWER</strong><br>
+        </p>
+        <div class="icon_box">
+            <div>
+                <p>
+                    <img src="icon1.png"><br>
+                    asdfasfasdfasdfasdf<br>
+                    asdfasdfasdfasdfasdfasdf<br>
+                    asdfasdfasdfasf<br>
+                </p>
+                <p>
+                    <img src="icon2.png"><br>
+                    asdfasfasdfasdfasdf<br>
+                    asdfasdfasdfasdfasdfasdf<br>
+                    asdfasdfasdfasf<br>
+                </p>
+                <p>
+                    <img src="icon3.png"><br>
+                    asdfasfasdfasdfasdf<br>
+                    asdfasdfasdfasdfasdfasdf<br>
+                    asdfasdfasdfasf<br>
+                </p>
+                <p>
+                    <img src="icon4.png"><br>
+                    asdfasfasdfasdfasdf<br>
+                    asdfasdfasdfasdfasdfasdf<br>
+                    asdfasdfasdfasf<br> 
+                </p>
+                <hr><hr><hr><hr>
+            </div>
+        </div>
+
+        <div class="chefs">
+            <div>
+                <div id="left">
+                    <p>
+                        asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf<br>
+                        asdfasdfalksdjf;l ajsl;dkfjal;sdkfja;lskdjf a;lsdj f;lkasdjf;lfasd;fklajs df<br>
+                        a;lsdkfj asl;kdf jal;skdjfal;ksdjfalksdjfal;skdjf;alksdjfal;ksdf<br>
+                    </p>
+                </div>
+                <div id="right">
+                    <img src="chef.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

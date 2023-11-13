@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*본 판*/
+        #base {
+            margin-top: 30px;
+            width: 1000px;
+            height: 1040px;
+        }
+
+        /*area 1*/
+        #top {
+            width: 1000px;
+            height: 500px;
+        }
+        .top_left {
+            width: 750px;
+            height: 500px;
+            float: left;
+            background-image: url("chef_about.png");
+        }
+        .top_right {
+            width: 250px;
+            height: 500px;
+            float: left;
+        }
+        .top_right div {
+            width: 250px;
+            height: 250px;
+        }
+        #top_box {
+            margin-top: 250px;
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: rgb(0, 128, 0, 0.6);
+        }
+        #top_box h2 {
+            margin-left: 10px;
+            width: 200px;
+        }
+        #top_box p {
+            margin-left: 10px;
+            width: 200px;
+            height: 100px;
+        }
+
+        /*area 2*/
+        #box_all {
+            width: 1000px;
+            height: 500px;
+        }
+        .box_left {
+            width: 750px;
+            height: 500px;
+            float: left;
+        }
+        .box_left .box_odd {
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: rgb(112, 73, 34);
+        }
+        .box_left .box_even {
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: rgb(255, 128, 0);
+        }
+        .box_right {
+            width: 250px;
+            height: 500px;
+            float: left;
+            background-color: yellow;
+        }
+        .box_left .box {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 210px;
+            height: 210px;
+        }
+        .box_right .box {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 210px;
+            height: 460px;
+        }
+        .box #title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /*area 3*/
+        #footer {
+            width: 1000px;
+            height: 40px;
+            background-color: pink;
+        }
+        #footer .f_left {
+            width: 750px;
+            height: 40px;
+            float: left;
+            background-color: gray;
+        }
+        ul.bar {
+            list-style: none;
+            padding: 0;
+            display: flex;  /*이게 뭔지*/
+        }
+        li.item {
+            margin-left: 10px;
+            text-align: center;
+            position: relative; /*이거랑*/
+        }
+        li.item::after {
+          content: "";
+          margin-left: 4px;
+          width: 2px;
+          height: 19px;
+          position: absolute;   /*이거 없으면 안되던데 뭔지*/
+          background-color: orange;
+        }
+        li.item:last-child::after {
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="base">
+            <div id="top">
+                <div class="top_left">
+                    <div id="top_box">
+                        <h2>GLOBAL<br>BUSINESS</h2>
+                        <p>
+                            asdfasdfasdfsdfadfasf<br>
+                            sdfasdf asdf<br>
+                            asdfasdfasdfasdfasd<br>
+                            asdfasdfadfasdfas<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="top_right">
+                    <div>
+                        <img src="right1.png">
+                    </div>
+                    <div>
+                        <img src="right2.png">
+                    </div>
+                </div>
+            </div>
+            <div id="box_all">
+                <div class="box_left">
+                    <div class="box_odd">
+                        <div class="box">
+                            <span id="title">TITLE</span><br>
+                            asdfasdfas df;lkajsdffas;lfasdas
+                            asd;fkjas;dlkfjals;kj
+                        </div>
+                    </div>
+                    <div class="box_even">
+                        <div class="box">
+                            <span id="title">TITLE</span><br>
+                            asdfasdfas df;lkajsdffas;lfasdas
+                            asd;fkjas;dlkfjals;kj
+                        </div>
+                    </div>
+                    <div class="box_odd">
+                        <div class="box">
+                            3
+                        </div>
+                    </div>
+                    <div class="box_even">
+                        <div class="box">
+                            4
+                        </div>
+                    </div>
+                    <div class="box_odd">
+                        <div class="box">
+                            5
+                        </div>
+                    </div>
+                    <div class="box_even">
+                        <div class="box">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <div class="box_right">
+                    <div class="box">
+                        7
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="f_left">
+                    <ul class="bar">
+                        <li class="item">법적고지</li>
+                        <li class="item">이메일무단수집거부</li>
+                        <li class="item">이용약관</li>
+                        <li class="item">개인정보취급방침</li>
+                        <li class="item">고객센터</li>
+                        <li class="item">입찰공고</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
