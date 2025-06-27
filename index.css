@@ -1,6 +1,9 @@
 body {
+    width: 100vw;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -55,7 +58,9 @@ p {
 }
 
 #main_picture {
+    width: 100%;
     height: 464px;
+    overflow: hidden;
 }
 
 #icon_title {
@@ -71,22 +76,22 @@ p {
 }
 
 #icon_box {
-    margin: 10px auto;
-    width: 1240px;
-    text-align: center;
+    margin: 10px 0px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-#icon_box p {
-    display: inline-block;
+#icon_box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 250px;
-    height: 130px;
+    height: 200px;
     border-bottom: 1px solid black;
-    margin-right: 60px;
     font-size: 14px;
-}
-
-#icon_box p:last-child {
-    margin-right: 0px;
+    text-align: center;
 }
 
 #chefs {
