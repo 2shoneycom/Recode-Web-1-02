@@ -79,21 +79,19 @@ p {
     margin: 10px 0px 50px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#icon_box p {
-    display: inline-block;
+#icon_box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 250px;
-    height: 130px;
+    height: 200px;
     border-bottom: 1px solid black;
-    margin-right: 60px;
     font-size: 14px;
     text-align: center;
-}
-
-#icon_box p:last-child {
-    margin-right: 0px;
 }
 
 #chefs {
