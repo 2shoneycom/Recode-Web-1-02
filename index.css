@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#header {
+    height: 120px;
+}
+
+#header ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header li {
+    display: inline-block;
+    margin-right: 80px;
+    height: 53px;
+    line-height: 53px;
+}
+
+#header li:nth-child(4) {
+    margin-top: 33px;
+}
+
+#header li:last-child {
+    margin-right: 0px;
+}
+
+#header a:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+#header a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+#header a:hover {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+#header a:active {
+    color: red;
+    text-decoration-line: underline;
+}
+
+#main_picture {
+    height: 464px;
+}
+
+#icon_title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+
+#icon_title .bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#icon_box {
+    margin: 10px auto;
+    width: 1240px;
+    text-align: center;
+}
+
+#icon_box p {
+    display: inline-block;
+    width: 250px;
+    height: 130px;
+    border-bottom: 1px solid black;
+    margin-right: 60px;
+    font-size: 14px;
+}
+
+#icon_box p:last-child {
+    margin-right: 0px;
+}
+
+#chefs {
+    height: 304px;
+    background-color: #ECECEC;
+}
+
+#chefs>div {
+    width: 771px;
+    height: 100%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#chefs .left {
+    width: 530px;
+    height: 100%;
+    float: left;
+}
+
+#chefs .left .paragraph {
+    width: 500px;
+    margin: 25% 0px;
+}
+
+#chefs .right {
+    width: 241px;
+    float: left;
+}
